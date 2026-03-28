@@ -1,7 +1,4 @@
-"""
-Nivel 1: Análisis Léxico - Alfabeto (Σ = {I, V, X, L, C, D, M})
-"""
-
+# NIVEL 1: ALFABETO
 def validar_simbolos(cadena: str) -> bool:
     #Valida si todos los caracteres de la cadena pertenecen al alfabeto romano.
     # Eliminamos espacios en los extremos
@@ -15,7 +12,7 @@ def validar_simbolos(cadena: str) -> bool:
     # Validación carácter por carácter
     for caracter in cadena_limpia:
         if caracter not in alfabeto_romano:
-            # En cuanto encuentra ALGO que no sea romano (letra minúscula, 
+            # En cuanto encuentra ALGO que no sea romano (letra minúscula,
             # número, símbolo o espacio intermedio), rechaza la cadena.
             return False
     # Regresar cadena valida
